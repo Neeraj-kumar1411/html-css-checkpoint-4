@@ -1,0 +1,296 @@
+@import url("./reset.css");
+@import url("./flex.css");
+@import url("./global.css");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900:0,700&display=swap");
+
+/* header */
+
+/* general */
+
+.section-padding {
+  padding: 4rem 0;
+}
+.white {
+  color: white;
+}
+.red {
+  color: #ea5433;
+}
+.head-color {
+  color: #635551;
+}
+.upper-header {
+  padding: 1rem 0;
+}
+.lower-header {
+  background-color: #504e4e40;
+  padding: 1rem 0;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.drop-down {
+  position: relative;
+  font-size: 1rem;
+  font-family: 700;
+}
+.head-li a:hover {
+  color: #ea5433;
+}
+.drop-down:hover {
+  color: #ea5433;
+}
+
+.drop-down-1 {
+  font-size: 0.7rem;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-60%);
+  display: none;
+  width: 7rem;
+  background-color: white;
+  padding: 1rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 2px 2px grey;
+}
+
+.drop-down:hover .drop-down-1 {
+  display: flex;
+}
+
+.drop-down-3 {
+  position: relative;
+}
+
+.drop-down-4 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  width: 8rem;
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 2px 2px grey;
+}
+
+.drop-down-3:hover .drop-down-4 {
+  display: flex;
+}
+
+.head-li {
+  margin-right: 1rem;
+  color: #635551;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.head-li a {
+  color: #635551;
+  /* font-size: 1rem; */
+  /* font-weight: 600; */
+}
+.upper-head-heading {
+  font-size: 1.8rem;
+  color: #635551;
+  font-weight: 900;
+}
+.lower-header-heading {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header-slace {
+  margin: 0 0.5rem;
+}
+.lower-head-blog {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* main */
+main {
+  margin-top: 7rem;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+}
+.blog-box {
+  border-radius: 0.1rem;
+  box-shadow: 0 0 3px 3px gray;
+  margin-bottom: 1.5rem;
+}
+.blog-box-img {
+  border-radius: 0.1rem;
+}
+.blog-article {
+  padding: 0.8rem;
+}
+
+.blog-nav {
+  margin: 0.6rem 0;
+}
+.article-btn-div {
+  padding: 0.8rem 0;
+}
+
+.pre-next-container {
+  margin-bottom: 4rem;
+}
+
+.pre-next-btn {
+  display: inline-block;
+  padding: 1rem;
+  /* border: 1px solid blue; */
+  box-shadow: 0 0 1px 1px gray;
+  margin-right: 0.8rem;
+}
+.pre-2 {
+  background-color: #ea5433;
+  color: white;
+}
+.pre-next-btn:hover {
+  background-color: #ea5433;
+  color: white;
+}
+
+/* blog-contact-section */
+.blog-contact-section {
+  background-color: #f3ded6;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.6rem 0;
+}
+.phone-mail-box {
+  display: inline-block;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+.phone {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #635551;
+}
+.enttity {
+  color: #ea5433;
+  line-height: 1.5;
+}
+.phone-mal-ol a {
+  color: #635551;
+}
+
+.toogle-para {
+  color: #635551;
+  margin-bottom: 1rem;
+}
+
+/* toogle */
+
+.switch {
+  width: 16.5rem;
+  height: 34px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(136, 132, 132);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Subscribe";
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 8rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ea5433;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+input:checked + .slider {
+  background-color: #f6f7f8;
+  border: 0.7px solid #ea5433;
+  border-radius: 0.5rem;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9c9292;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10rem);
+  -ms-transform: translateX(10rem);
+  transform: translateX(10rem);
+}
+
+.blog-contact-nav {
+  display: flex;
+  /* border: 1px solid blue; */
+  align-content: flex-start;
+}
+.icon-circle {
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  background-color: #ea5433;
+  border-radius: 50%;
+  color: white;
+  margin-right: 0.5rem;
+}
+.verticle-line {
+  display: inline-block;
+  height: 3rem;
+  border: 2px solid #ea5433;
+  margin-top: 1.5rem;
+}
+.scroll-btn {
+  width: 2.5rem;
+  height: 2rem;
+  background-color: rgb(238, 53, 53);
+  border: none;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  color: white;
+}
+.scroll-btn a {
+  color: white;
+}
